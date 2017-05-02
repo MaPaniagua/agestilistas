@@ -1,0 +1,76 @@
+.parallax-wrapper {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/modulo_a.jpg);
+  
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-moz-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-device-pixel-ratio: 1.5) {
+    background-image: url(../img/modulo_a@2x.jpg);
+  }
+  &.second-background {
+    background-image: url(../img/modulo_b.jpg);
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(../img/modulo_b@2x.jpg);
+    }
+  }
+  &.third-background {
+    background-image: url(../img/modulo_c@2x.jpg);
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(../img/modulo_c@2x.jpg);
+    }
+  }
+  &.fourth-background {
+    background-image: url(../img/modulo_d@2x.jpg);
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(../img/modulo_d@2x.jpg);
+    }
+  }  
+
+  .parallax-text {
+    color: white;
+    text-align: center;
+    padding: 100px 80px 60px 80px;
+
+    h2{
+      font-weight: 400;
+      padding: 0 20%;
+      color:#fff;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      font-weight: 500;
+      margin-bottom: 40px;
+      line-height: 40px;
+    }
+
+    p {
+      margin: 15px 5px;
+      font-size: 1.1em;
+      line-height: 2em;
+    }
+  }
+  @media #{$mobile}, #{$tablet} {
+    .parallax-text {
+      h2{
+        padding: 0 10%;
+      }
+    }
+  }
+}

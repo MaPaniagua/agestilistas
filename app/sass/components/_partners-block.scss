@@ -1,0 +1,68 @@
+.block-partners {
+  &.withimage{
+     overflow: hidden;
+  }
+  h2{
+    padding: 0 8%;
+  }
+  .table-partners{
+    display: flex;
+    .partner{
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      height:100%;
+      .logo{
+          height:120px;
+          display:block;
+          position:relative;
+        img{
+          position:relative;
+          display: block;
+          margin: 0 auto;
+          &.kaba{
+            padding-top: 30px;
+          }
+        }
+      }
+      .text{
+        text-align: center;
+        padding: 5% 10%;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #303B4C;
+      }
+
+      &.withiphone {
+        p {
+          padding: 5% 110px 5% 0px !important;
+        }
+      }
+      &.text-left .logo img {
+        margin-left: 0 !important;
+      }
+      img.iphone {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 110px;
+        height: auto;
+      }
+      &.text-left .text {
+        text-align: left !important;
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+@media #{$mobile}, #{$tablet} {
+  .block-partners {
+    .table-partners{
+      display: block;
+    }
+    h2{
+      font-size: $font-l
+    }
+  }
+}

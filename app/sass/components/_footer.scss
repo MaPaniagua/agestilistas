@@ -1,0 +1,95 @@
+.page-wrapper {
+  > footer {
+    > div {
+      &:nth-child(1) {
+        padding-top: $base*7.5;
+        padding-bottom: $base*4.5;
+        background: url('../img/bg-footer.png') center center no-repeat;
+        background-size: cover;
+        text-align: center;
+        h2 {
+          color: $light;
+          max-width: 900px;
+          margin: 0 auto $base*2;
+        }
+        .btn {
+          height: $base*4;
+          line-height: $base*4;
+        }
+      }
+      &:nth-child(2) {
+        height: $base*8.5;
+        line-height: $base*8.5;
+        color: $light;
+        text-align: center;
+        background: url(../img/feature-landings/bg-footer-features.png) center center no-repeat;
+        background-size: cover;
+        text-align: center;
+        a {
+          color: $light;
+          text-decoration: none;
+        }
+      }
+      @media #{$tablet} {
+        .btn {
+          height: $base*5.5;
+          line-height: $base*5.5;
+        }
+      }
+      @media #{$mobile} {
+        &:nth-child(1) {
+          padding-top: $base*2.5;
+          h2 {
+            font-size: $font-m;
+          }
+          .btn {
+            height: $base*3;
+            line-height: $base*3;
+          }
+        }
+        &:nth-child(2) {
+          height: 95px;
+          line-height: $base*2;
+          padding: $base 0;
+          a {
+            display: block;
+            color: $light;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &.dark {
+      height: 190px !important;
+      > div {
+      
+        &:nth-child(1) {
+          background: url(../img/feature-landings/bg-footer-features.png) center center no-repeat;
+          background-size: cover;
+          text-align: center;
+          a{
+            color: $light;
+            text-decoration: none;
+          }
+        }
+      }
+      @media #{$mobile} {
+        height:140px !important;
+        > div{
+
+          div{
+            float: initial !important;
+            text-align: center;
+            margin: 0 0 10px !important;
+          }
+        }
+        // .pull-right{
+        //   float: initial !important;
+        // }
+        // .pull-left{
+        //   float: initial !important;
+        // }
+      } 
+    }
+  }
+}

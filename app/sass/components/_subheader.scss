@@ -1,0 +1,402 @@
+
+.sub-header {
+  background: $dark;
+  color: $light;
+  text-align: center;
+  position: relative;
+
+  padding-top: 50px;
+  background-image: url("../img/header-home.png");
+  background-repeat:no-repeat;
+  background-attachment: initial;
+  background-size: cover;
+  background-position: center center;
+
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-moz-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-device-pixel-ratio: 1.5) {
+    background-image: url("../img/header-home@2x.png");
+  }
+  
+  // @media screen and (max-height: 400px) {
+  //   height: auto !important;
+  // }
+  
+  @media only screen and (device-width:768px){
+     background-position: center center;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/home-header-mobile.jpg");
+    background-attachment: fixed;
+    background-size:100% auto;
+    // height: 100%;
+    background-color: black;
+    background-position: center top;
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/home-header-mobile@2x.jpg");
+    }
+  }
+
+  &.bot {
+    text-align: initial;
+    h1{
+      margin-bottom: 40px;
+      small{
+        line-height: 36px;
+        margin-top: 40px;
+      }
+    }
+    p{
+      font-weight: 400;
+    }
+
+
+    background-image: url("../img/bot-header.jpg");
+    
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/bot-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/bot-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/bot-header-mobile@2x.jpg");
+      }
+    }
+  }
+
+  &.app {
+    background-image: url("../img/app-header.jpg");
+    
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/app-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/app-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      // height: 100%;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/app-header-mobile@2x.jpg");
+      }
+    }
+  }
+
+  &.cms {
+    background-image: url("../img/cms-header.jpg");
+    
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/cms-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/cms-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      // height: 100%;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/cms-header-mobile@2x.jpg");
+      }
+    }
+  }
+
+  &.chat{
+    background-image: url("../img/chat-header.jpg");
+    
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/chat-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/chat-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      // height: 100%;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/chat-header-mobile@2x.jpg");
+      }
+    }
+  }
+  &.requests{
+    background-image: url("../img/peticiones-header.jpg");
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/peticiones-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/peticiones-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      // height: 100%;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/peticiones-header-mobile@2x.jpg");
+      }
+    }
+  }
+  &.bookings{
+    background-image: url("../img/booking-header.jpg");
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/bookings-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/booking-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/booking-header-mobile@2x.jpg");
+      }
+    }
+  }
+  &.checkin{
+    background-image: url("../img/checkin-header.jpg");
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/checkin-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/checkin-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      // height: 100%;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/checkin-header-mobile@2x.jpg");
+      }
+    }
+  }
+
+  &.surveys{
+    background-image: url("../img/surveys-header.jpg");
+    
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/surveys-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/surveys-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      // height: 100%;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/surveys-header-mobile@2x.jpg");
+      }
+    }
+  }
+   &.congress {
+    background-image: url("../img/congress-header.jpg");
+    
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/congress-header@2x.jpg");
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../img/congress-header-mobile.jpg");
+      background-attachment: fixed;
+      background-size:100% auto;
+      // height: 100%;
+      background-color: black;
+
+      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-moz-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("../img/congress-header-mobile@2x.jpg");
+      }
+    }
+  }
+
+
+
+  .sub-header-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  > div {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: $base*6.5 0 $base*9;
+    h1 {
+      margin-bottom: $base*4.5;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      font-size: $font-ls;
+      line-height: $base*1.5;
+      margin-bottom: $base*1.5;
+      font-weight: 500;
+    }
+    input[type="text"] {
+      height: $base*3.5;
+      line-height: $base*3.5;
+      font-size: $font-ls;
+      color: $neutral;
+      margin-right: $base;
+      padding: 0 $base*1.5;
+      width: $base*20;
+    }
+    button {
+      height: $base*3.5;
+      line-height: $base*3.5;
+      font-size: 1em;
+      padding: 0 $base*2;
+    }
+  }
+  @media #{$mobile}, #{$tablet} {
+    > div {
+      text-align: center;
+      padding: $base*2.5 $base*2 $base*5.5;
+      h1 {
+        margin-bottom: $base*2;
+      }
+      p {
+        font-size: $font-sm;
+        line-height: $base*2;
+      }
+      input[type="text"] {
+        // display: none;
+      }
+      button {
+        font-size: 1em;
+        height: $base*3.5;
+        line-height: $base*3.5;
+        padding: 0 $base*1.5;
+      }
+    }
+  }
+  @media #{$mobile} {
+    > div {
+      padding: $base*2.5 0 $base*7.5;
+      h1 {
+        font-size: $font-sl;
+        line-height: $base*2.5;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px black;
+        padding: 0 5%;
+      }
+      p {
+        display: none;
+      }
+      input[type="text"] {
+        // display: none;
+        margin-bottom: 10px;
+      }
+      button {
+        font-size: 1em;
+        height: $base*3.5;
+        line-height: $base*3.5;
+        padding: 0 $base*1.5;
+      }
+    }
+  }
+}
+
+#background_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+
+
+}
+
+.background-video-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background-color: black;
+  // opacity: 0.6;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  max-width: none !important;
+  background-image: url(/img/Artboard.png);
+  background-repeat: repeat; 
+}

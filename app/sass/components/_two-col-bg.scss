@@ -1,0 +1,115 @@
+.two-col-bg {
+  padding: $base*3.5;
+  position: relative;
+  background: white;
+  > div {
+    max-width: 1140px;
+    margin: 0 auto;
+    h3 {
+      font-size: $font-lm;
+      font-weight: 500;
+      line-height: $base*2;
+      margin-bottom: 26px;
+    }
+    img {
+      max-width: 100%;
+    }
+    p {
+      line-height: $base*1.5;
+      margin-bottom: $base*2.5;
+    }
+    button {
+      height: $base*3;
+      border-width: 1px;
+      line-height: $base*3;
+      padding: 0 $base*2;
+    }
+  }
+  @media #{$mobile}, #{$tablet} {
+    background: url('../img/bg-easy-mobile.png') center bottom $base*(-20) no-repeat;
+    padding-bottom: $base*28.5;
+    > div {
+      .row {
+        div {
+          margin-bottom: $base*4.5;
+          padding-bottom: $base*4.5;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;;
+            bottom: 0;
+            left: 50%;
+            width: 200px;
+            transform: translateX(-50%);
+            border-bottom: 1px solid $neutral;
+          }
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+      h3 {
+        text-align: center;
+        font-size: $font-l;
+        margin-bottom: $base*2;
+        line-height: $base*3;
+      }
+      p {
+        text-align: center;
+        font-size: $font-m;
+        line-height: $base*3;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        line-height: $base*4.5;
+        height: $base*4.5;
+        font-size: $font-lm;
+      }
+      a{
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+  @media #{$mobile} {
+    background-size: auto 56%;
+    background-position: center bottom -68%;
+    padding: $base*1.5;
+    .mobile-bg {
+      margin-bottom: 40% !important;
+    }
+    > div {
+      h3 {
+        font-size: $font-sm;
+      }
+      p {
+        font-size: $font-s;
+        line-height: $base*1.5;
+      }
+      button {
+        line-height: $base*3;
+        height: $base*3;
+        font-size: $font-s;
+        margin-bottom: 70px;
+      }
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    background-size: 90% auto;
+    background-position: center bottom -46%;
+    .mobile-bg button {
+      margin-bottom: 50% !important;
+    }
+  }
+  @media only screen and (max-width: 470px) {
+    background-position: center bottom -33%;
+  }
+  @media only screen and (max-width: 400px) {
+    background-position: center bottom -21%;
+  }
+}

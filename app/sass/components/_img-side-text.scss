@@ -1,0 +1,391 @@
+.img-side-text {
+  font-size: 18px;
+  padding: 32px 30px;
+  background: white;
+  &.last-container{
+    padding: 0 30px;
+    .row{
+      position: relative;
+      display: flex;
+      .img-big{
+        vertical-align: bottom;
+        display: table-cell;
+      }
+    }
+  }
+  &.subheader{
+    .row {
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+  .row {
+    .col-text-left{
+      padding: 0 3%;
+    }
+     .col-text-right{
+      padding-left: 3%;
+    }
+    .col-content-center{
+      height: 600px;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &.img-big{
+        img{
+          max-width: 100%;
+        }
+      }
+      .col-content{
+        padding-bottom:50px;
+        h2{
+          margin: 0 0 $base*2;
+        }
+        li{
+          margin-bottom: 16px;
+        }
+      }
+      video{
+        width: 100%;
+        max-height: 600px;
+        -webkit-box-shadow: 0px 0px 64px 0px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0px 0px 64px 0px rgba(0,0,0,0.4);
+        box-shadow: 0px 0px 64px 0px rgba(0,0,0,0.4);
+      }
+    }
+
+    img {
+      //max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+    h2 {
+      text-align: left;
+      margin: $base*6.5 0 $base*2;
+    }
+    p {
+      line-height: $base*2;
+      margin-bottom: $base*2;
+    }
+    .img-background{
+      height: 600px;
+      &.management-first{
+        background-image: url("../img/bg-info-management.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/bg-info-management@2x.png");
+        }
+      }
+      &.management{
+        background-image: url("../img/bg-info-management.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-position-x: right;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/bg-info-management@2x.png");
+        }
+      }
+      &.invitacion{
+        background-image: url("../img/bg-invitacion.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-position-x: right;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/bg-invitacion@2x.png");
+        }
+      }
+      &.gestion{
+        background-image: url("../img/bg-gestion.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/bg-gestion@2x.png");
+        }
+      }
+      &.flexible-bookings{
+        background: url(../img/feature-landings/bg-flexible-bookings.png) right no-repeat;
+        background-image: url("../img/feature-landings/bg-flexible-bookings.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-position-x: right;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/feature-landings/bg-flexible-bookings@2x.png");
+        }
+      }
+      &.automatic{
+        background: url(../img/feature-landings/bg-eficiente.png) right no-repeat;
+        background-image: url("../img/feature-landings/bg-eficiente.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-position-x: right;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/feature-landings/bg-eficiente@2x.png");
+        }
+      }
+      &.petitions-list{
+        background-image: url("../img/feature-landings/bg-petitions-list.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/feature-landings/bg-petitions-list@2x.png");
+        }
+      }
+      &.manage-popup{
+        background-image: url("../img/feature-landings/bg-manage-popup.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-position-x: right;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/feature-landings/bg-manage-popup@2x.png");
+        }
+      }
+      &.cms-notification{
+        background-image: url("../img/feature-landings/bg-cms-notification.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/feature-landings/bg-cms-notification@2x.png");
+        }
+      }
+      &.multilanguage{
+        background-image: url("../img/feature-landings/bg-multilanguage.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-position-x: right;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/feature-landings/bg-multilanguage@2x.png");
+        }
+      }
+      &.management-platform{
+        background-image: url("../img/feature-landings/bg-management-platform.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-position-x: right;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/feature-landings/bg-management-platform@2x.png");
+        }
+      }
+      &.multilanguage-setup{
+        background-image: url("../img/feature-landings/bg-multilanguage-setup.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url("../img/feature-landings/bg-multilanguage-setup@2x.png");
+        }
+      }
+      &.activity-bot{
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: -15px;
+          background-image: url("../img/bg-activitybot.png");
+          background-repeat: no-repeat;
+          background-attachment: initial;
+          background-size: cover;
+
+          @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+          only screen and (-moz-min-device-pixel-ratio: 1.5),
+          only screen and (-o-min-device-pixel-ratio: 3/2),
+          only screen and (min-device-pixel-ratio: 1.5) {
+            background-image: url("../img/bg-activitybot@2x.png");
+          }
+        }
+      }
+      &.dispositivos-bot{
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -20px;
+          bottom: 0;
+          right: 0;
+          background: url("../img/bg-dispositivos.png")right no-repeat;
+          background-repeat: no-repeat;
+          background-attachment: initial;
+          background-size: contain;
+
+          @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+          only screen and (-moz-min-device-pixel-ratio: 1.5),
+          only screen and (-o-min-device-pixel-ratio: 3/2),
+          only screen and (min-device-pixel-ratio: 1.5) {
+            background-image: url("../img/bg-dispositivos@2x.png");
+          }
+        }
+      }
+    }
+
+  }
+  &.img-side-text-invert {
+    .row {
+      > div:nth-child(1) {
+        float: right;
+      }
+
+    }
+  }
+
+  &.leaf-background {
+    background-image: url("../img/back-mvl.jpg");
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/back-mvl@2x.jpg");
+    }
+  }
+  &.gray-background{
+    background-image: url("../img/back-gray.png");
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/back-gray@2x.png");
+    }
+  }
+  &.diagonal-background {
+    background-image: url("../img/feature-landings/diagonal-back.png");
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/feature-landings/diagonal-back@2x.png");
+    }
+  }
+
+  &.buildings {
+    background-image: url(../img/feature-landings/buildings.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.icons-background{
+    background-image: url("../img/feature-landings/bg-back-feature.png");
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url("../img/feature-landings/bg-back-feature@2x.png");
+    }
+  }
+
+  @media #{$mobile}, #{$tablet} {
+    padding: 32px 30px;
+    &.last-container{
+      padding: 0 30px;
+      .row{
+        display:block;
+      }
+    }
+    .row {
+      .col-content-center{
+        height:auto;
+        .col-content{
+          padding:5% 10%;
+        }
+
+      }
+      img{
+        max-width: 100%;
+      }
+      h2 {
+        margin-top: $base*4.5;
+        font-size: $font-xl;
+        line-height: $base*4;
+      }
+    }
+  }
+  @media #{$mobile} {
+    .row {
+      h2 {
+        margin-top: $base*2.5;
+        font-size: $font-m;
+        line-height: $base*2;
+      }
+      p {
+        line-height: $base*2;
+        margin-bottom: $base*2;
+      }
+    }
+  }
+}

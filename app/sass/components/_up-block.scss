@@ -1,0 +1,43 @@
+.up-bg {
+  background-image: url('../img/bg-up-arrows.png'), url('../img/bg-up-arrows.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: $base*2.5 $base*6, bottom $base*4.5 right $base*2.5;
+  padding-top: $base*4.5;
+  background-color: #F3F3F3;
+  img {
+    margin-bottom: -$base*3.5 !important;
+    max-width: 100%;
+  }
+  > div {
+    max-width: 850px;
+    margin: 0 auto;
+    p.big {
+      margin-bottom: $base*3.5;
+      text-align: center;
+    }
+
+  }
+  @media #{$tablet} {
+    background: none;
+    p {
+      font-size: $font-sl;
+      line-height: $base*3;
+    }
+    img {
+      max-width: 100%;
+      //margin-bottom: 0 !important;
+    }
+  }
+  @media #{$mobile} {
+    background: none;
+    p {
+      // font-size: $font-s;
+      line-height: $base*1.5;
+      font-size: 1.1em;
+    }
+    img {
+      max-width: 100%;
+      margin-bottom: -30px !important;
+    }
+  }
+}

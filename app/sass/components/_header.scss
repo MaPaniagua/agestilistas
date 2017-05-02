@@ -1,0 +1,86 @@
+.page-wrapper {
+  > header {
+    height: $base*7;
+    // background-color: $dark;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    
+    > div {
+      // max-width: 1140px;
+      margin: 0 auto;
+      position: relative;
+      padding: 0 80px;
+
+      @media #{$mobile}, #{$tablet} {
+        padding: 0 20px;
+      }
+      .logo {
+        height: $base*2.5;
+        margin-top: $base*2;
+        float: left;
+      }
+      button {
+        float: right;
+        margin-top: $base*2.5;
+        &.menu-btn {
+          border-color: transparent;
+          display: none;
+        }
+      }
+      .facebook-bot-btn {
+      float: right;
+      margin-top: 40px;
+      padding: 0 30px;
+      }
+    }
+    &.header-black{
+      color:#000;
+    }
+  }
+  @media #{$tablet} {
+    > header {
+      height: $base*9;
+      > div {
+        .logo {
+          height: $base*4.5;
+          margin-left: $base*2;
+        }
+        button {
+          &.menu-btn {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  @media #{$mobile}, #{$tablet} {
+    > header {
+      height: $base*4;
+      > div {
+        .logo {
+          height: $base*2;
+          margin-left: $base;
+          margin-top: $base;
+        }
+        button {
+          margin-top: $base;
+          font-size: $font-s;
+          padding: 0 $base;
+          height: $base*2;
+          line-height: $base*2;
+          img {
+            height: $base*1.5;
+          }
+          &.menu-btn {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.normal-block {
+  padding: $base*5;
+  position: relative;
+  span {
+    small {
+      display: block;
+      margin-top: $base;
+    }
+  }
+  &.arrow-bottom {
+    &:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-style: solid;
+      border-right-width: 54px;
+      border-left-width: 54px;
+      border-top-width: 40px;
+      border-color: transparent;
+      border-top-color: $neutral-dark;
+    }
+  }
+  &.big {
+    span {
+      font-size: 22px;
+      small {
+        font-size: 14px;
+      }
+    }
+  }
+  @media #{$mobile}, #{$tablet} {
+    padding: $base*4 0;
+    &.arrow-bottom {
+      &:after {
+        border-right-width: 16px;
+        border-left-width: 16px;
+        border-top-width: 8px;
+        bottom: -11px;
+      }
+    }
+    h2 {
+      margin-bottom: $base*2;
+      padding:5%;
+    }
+  }
+}

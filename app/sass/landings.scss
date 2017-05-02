@@ -1,0 +1,27 @@
+body.feature-landing {
+  .page-wrapper{
+    .title-img{
+       h2.title{
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+      .image-center{
+        text-align: center;
+      }
+    }
+   
+    @media #{$mobile}, #{$tablet} {
+      .pair-lists{
+        ul{
+          padding:0 5%;
+        }
+      }
+      .title-img{
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
