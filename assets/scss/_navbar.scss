@@ -1,0 +1,197 @@
+/* 2.1 navbar global */
+.navbar {
+    margin-bottom: 0;
+    &.navbar-default {
+        border: 0;
+        background-color: transparent;
+        .navbar-nav {
+            padding-right: 20px;
+            > li {
+                > a {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    color: $navbar-link-color;
+                    line-height: 100px;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 400;
+                    &:hover {
+                        color: $navbar-hover-color;
+                        background: $navbar-hover-bg;
+                    }
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    -webkit-transition: all 0.7s;
+                    transition: all 0.7s;
+                }
+                &:hover {
+                    &:after {
+                        width: 100%;
+                        background: $hover-line-color;
+                    }
+                }
+            }
+            .active {
+                > a {
+                    color: $navbar-active-color;
+                    background: $navbar-active-bg;
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    background: $active-line-color;
+                }
+            }
+            > .open {
+                > a {
+                    color: $white;
+                    background: transparent;
+                }
+            }
+            .dropdown {
+                > a {
+                    &:after {
+                        content: '\f107';
+                        font-family: $fontawesome;
+                        display: inline-block;
+                        margin-left: 5px;
+                        line-height: 20px;
+                    }
+                }
+                .dropdown-menu {
+                    border:0;
+                    background: $dropdown-wrap-color;
+                    padding: 0;
+                    > li {
+                        > a {
+                            color: $dropdown-link-color;
+                            font-size: 13px;
+                            padding: 8px 20px;
+                            text-transform: uppercase;
+                            &:hover {
+                                color: $dropdown-hover-color;
+                                background: $dropdown-hover-bg;
+                            }
+                        }
+                        &.active {
+                            > a {
+                                color: $dropdown-hover-color;
+                                background: $dropdown-hover-bg;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-toggle {
+            background: $navbar-toggle-bg;
+            border: 0;
+            .icon-bar {
+                background: $navbar-toggle-line-color;
+            }
+            &:hover {
+            }
+        }
+    }
+}
+.top-right-contact {
+    font-size: 13px;
+    color: $white;
+    line-height: 100px;
+    font: 600px;
+    i {
+        padding-right: 5px;
+    }
+}
+/* 2.2 navbar on lg screen */
+@media screen and (min-width: 768px) {
+    .navbar {
+        &.navbar-default {
+            .navbar-nav {
+                float: right;
+                > li {
+                    &:after {
+                        height: 2px;
+                    }
+                }
+                .active {
+                    &:after {
+                        height: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* 2.3 navbar on sm & xs screen */
+@media screen and (max-width: 767px) {
+    .navbar {
+        margin-bottom: 0;
+        &.navbar-default {
+            background-color: #000;
+            .navbar-brand {
+                > img {
+                    width: 30%;
+                }
+            }
+            .navbar-collapse {
+                border: 0;
+                box-shadow: none;
+                &.collapse {
+                    padding-left: 0;
+                    margin-left: 0;
+                }
+            }
+            .navbar-nav {
+                padding-right: 0;
+                > li {
+                    > a {
+                        line-height: 30px;
+                        margin-left: 20px;
+                    }
+                    &:after {
+                        height: 0px;
+                    }
+                    .active {   
+                        &:after {
+                            height: 0;
+                        }
+                    }
+                }
+                .active {
+                    > a {
+                        color: $dropdown-hover-color;
+                        background: $dropdown-hover-bg;
+                    }
+                }
+                .dropdown {
+                    > a {
+                        &:after {
+                            content: '\f105';
+                            font-family: $fontawesome;
+                            display: inline-block;
+                            margin-left: 5px;
+                        }
+                        &:focus {
+                            &:after {
+                                content: '\f107';
+                            }
+                        }
+                    }
+                    .dropdown-menu {
+                        > li {
+                            > a {
+                                padding: 5px 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

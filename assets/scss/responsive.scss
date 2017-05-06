@@ -1,0 +1,94 @@
+@import 'variable';
+/* 05 responsive styles */
+//Small Display
+@media screen and (max-width: 991px) and (min-width: 768px) {
+	.pad120 {
+		padding: 40px 0;
+	}
+	.pad-t120 {
+		padding-top: 40px;
+	}
+	.sm-pad-b {
+		padding-bottom: 40px;
+	}
+	.mt60,
+	.mt65 {
+		margin-top: 30px;
+	}
+	.sm-mb40 {
+		margin-bottom: 40px;
+	}
+}
+//Extra Small Display
+@media screen and (max-width: 767px) {
+	.pad120 {
+		padding: 30px 0;
+	}
+	.pad-t90 {
+		padding-top: 30px;
+	}
+	.pad-t120 {
+		padding-top: 30px;
+	}
+	.mt60 {
+		margin-top: 10px;
+	}
+	.mt65 {
+		margin-top: 15px;
+	}
+	.xs-mb30 {
+		margin-bottom: 30px;
+	}
+	.mass-head-pad {
+		padding: 120px 0 60px;
+	}
+	.booking-form {
+		select {
+			margin-bottom: 15px;
+		}
+	}
+	.counter-box {
+		text-align: center;
+		margin-bottom: 30px;
+		.counter-icon {
+			margin-bottom: 5px;
+			i {
+				&:before {
+					font-size: 30px;
+					color: $brand-primary;
+				}
+			}
+		}
+		.counter-content {
+			.counter {
+				color: $white;
+				font-size: 30px;
+				margin-bottom: 10px;
+			}
+			h4 {
+				color: $white;
+				letter-spacing: 1px;
+			}
+		}
+	}
+	.mass-head-content h2.page-title {
+		line-height: 40px;
+		margin-top: 10px;
+	}
+	.footer-contact {
+		&.text-right,
+		&.text-left {
+			text-align: center;
+		}
+	}
+	.footer-icon {
+		i {
+			&:before {
+				color: $brand-primary;
+				font-size: 30px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+/* 05 responsive styles */
