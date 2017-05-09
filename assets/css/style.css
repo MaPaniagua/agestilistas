@@ -52,7 +52,7 @@ body {
 }
 
 .header {
-  background: rgba(0, 0, 0, 0.5);
+  background: #181617;
 }
 
 .alert {
@@ -479,6 +479,9 @@ a:focus {
 .pad-t120 {
   padding-top: 120px;
 }
+.pad-b120 {
+  padding-bottom: 120px;
+}
 
 .mass-head-pad {
   padding: 210px 0 100px;
@@ -534,7 +537,9 @@ a:focus {
 }
 
 .bg-5 {
-  background-image: url("../images/background/bg-5.jpg");
+  background-image: url("../images/promotions/tijeras.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 /* 2.1 navbar global */
@@ -1310,6 +1315,17 @@ a:focus {
 #back-to-top.reveal {
   opacity: 1;
 }
+
+
+.container.timing .group-schedule .title{
+  color: #F8CA7F;
+  text-transform: capitalize;
+  text-align: center;
+}
+.container.timing .group-schedule .schedule{
+  text-align: center;
+}
+
 
 /* 04 footer start */
 

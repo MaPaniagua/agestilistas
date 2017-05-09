@@ -25,7 +25,7 @@ if ( isset( $_POST["message"] ) ) {
 }
 
 //Add your email here
-$EmailTo = "ithemeslab@gmail.com";
+$EmailTo = "alvaroguerreroestlistas@gmail.com";
 
 // prepare email body text
 $msgBody = "";
