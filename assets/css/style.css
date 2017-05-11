@@ -52,7 +52,7 @@ body {
 }
 
 .header {
-  background: #181617;
+  background: #1A1919;
 }
 
 .alert {
@@ -498,7 +498,7 @@ a:focus {
 }
 
 .bg-color-2 {
-  background: #181617;
+  background: #1A1919;
 }
 
 .bg-drk-trns {
@@ -1326,6 +1326,25 @@ a:focus {
   text-align: center;
 }
 
+.background-testimonial{
+  background: url(assets/images/testimonial.png);
+  height: 300px;
+  background-repeat: no-repeat;
+}
+.owl-carousel .owl-wrapper-outer{
+  height: 220px;
+  top: 50px;
+}
+.owl-wrapper{
+  left: 136px !important;
+  top: 34px;
+}
+.slide-item{
+  width: 475px !important;
+}
+.owl-theme .owl-controls{
+  margin-top: 0;
+}
 
 /* 04 footer start */
 
