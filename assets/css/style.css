@@ -537,7 +537,7 @@ a:focus {
 }
 
 .bg-5 {
-  background-image: url("../images/promotions/tijeras.jpg");
+  background-image: url("../images/promotions/promotion.png");
   background-repeat: no-repeat;
   background-size: cover; 
 }
@@ -1345,7 +1345,57 @@ a:focus {
 .owl-theme .owl-controls{
   margin-top: 0;
 }
+.material{
+  background-image: url(../../assets/images/articulos.jpg);
+  height: 300px;
+}
+.productos{
+  background-image: url(../../assets/images/productos/productos_parallax.png);
+  height: 450px;
+}
 
+.service-icono{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #BC9355;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 29px;
+}
+.service-icono img{
+  margin-top: 10px;
+}
+
+.equipo{
+  background-image: url(../../assets/images/equipo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .service-area .col-float-rigth {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .productos .producto-previa{
+    height: 150px !important;
+  }
+  .productos .producto-kerastase{
+    height: 100px !important;
+  }
+  .background-testimonial.owl-carousel{
+    background: none !important;
+  }
+  .owl-wrapper{
+    left: 72px !important;
+    top: 34px;
+  }
+  .equipo{
+    background-image: url(../../assets/images/equipo-xs.png);
+  }
+}
 /* 04 footer start */
 
 /*# sourceMappingURL=style.css.map */
