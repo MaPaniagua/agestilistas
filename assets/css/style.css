@@ -653,7 +653,7 @@ a:focus {
     margin-bottom: 0;
   }
     .navbar.navbar-default {
-    background-color: #000;
+    background-color: #1a1919;
   }
     .navbar.navbar-default .navbar-brand > img {
     width: 30%;
@@ -1394,6 +1394,26 @@ a:focus {
   }
   .equipo{
     background-image: url(../../assets/images/equipo-xs.png);
+  }
+}
+
+@media screen and (max-width: 991px){
+  .forcefullwidth_wrapper_tp_banner{
+    display: none !important;
+  }
+  .header-background{
+    background-image: url(../../assets/images/header/header-local.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  .header-background .title{
+    position: relative;
+    padding-top: 40%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #BD9254;
   }
 }
 /* 04 footer start */
